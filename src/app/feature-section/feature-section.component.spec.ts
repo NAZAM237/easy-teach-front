@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainAccrochComponent } from './main-accroch.component';
+import { FeatureSectionComponent } from './feature-section.component';
 
-describe('MainAccrochComponent', () => {
-  let component: MainAccrochComponent;
-  let fixture: ComponentFixture<MainAccrochComponent>;
+describe('FeatureSectionComponent', () => {
+  let component: FeatureSectionComponent;
+  let fixture: ComponentFixture<FeatureSectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MainAccrochComponent]
+      imports: [FeatureSectionComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MainAccrochComponent);
+    fixture = TestBed.createComponent(FeatureSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

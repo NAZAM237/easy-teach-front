@@ -1,0 +1,125 @@
+@use "../../styles.scss";
+
+/* Footer */
+.footer {
+  background-color: #111827;
+  color: #D1D5DB;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer-logo span {
+  color: #4f46e5;
+}
+
+.footer-description {
+  color: #9CA3AF;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  color: #9CA3AF;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: white;
+}
+
+.footer-heading {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style-type: none;
+}
+
+.footer-link {
+  margin-bottom: 0.5rem;
+}
+
+.footer-link a {
+  color: #9CA3AF;
+  transition: color 0.3s;
+}
+
+.footer-link a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #374151;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  color: #6B7280;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    margin-bottom: 0;
+  }
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1rem;
+}
+
+.legal-link {
+  color: #6B7280;
+  font-size: 0.875rem;
+  transition: color 0.3s;
+}
+
+.legal-link:hover {
+  color: white;
+}
